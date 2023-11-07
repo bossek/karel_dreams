@@ -514,7 +514,7 @@ defmodule Karel.AI do
       Mind the correct usage of brackets in syntax!
 
       You reply will include only the content of the output, for example like this:
-      ["turn-right", "step", "step", "turn-left", step", "turn-right", "step"]
+      ["turn-right", "step", "step", "turn-left", "step", "turn-right", "step"]
       """)
     ])
     |> LLMChain.run()
