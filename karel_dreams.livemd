@@ -771,6 +771,8 @@ defmodule Karel.UI do
   end
 
   defp convert_walls(text) do
+    text = if String.trim(text) == "", do: "[]", else: text
+
     case Jason.decode(text) do
       {:ok, walls} when is_list(walls) ->
         walls =
